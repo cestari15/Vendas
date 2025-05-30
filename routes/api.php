@@ -4,6 +4,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\VendaController;
 use App\Http\Controllers\ParcelaController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 // ROTAS CLIENTES
@@ -31,3 +32,5 @@ Route::post('venda/pesquisar', [VendaController::class, 'pesquisar']);
 
 // ROTAS PARCELA
 Route::post('parcela/store', [ParcelaController::class, 'parcelas']);
+//LOGIN
+Route::post('login', [AuthController::class, 'login']);
